@@ -1,22 +1,28 @@
 [tool.poetry]
-name = "movie-system-fastapi"
+name = "fastapi-training"
 version = "0.1.0"
 description = ""
-authors = ["leon <90852553+leon0719@users.noreply.github.com>"]
+authors = ["leon0719 <leon0970865551@gmail.com>"]
 readme = "README.md"
-packages = [{include = "movie_system_fastapi"}]
+packages = [{include = "fastapi_training"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
-fastapi = {extras = ["all"], version = "^0.103.1"}
+fastapi = {extras = ["all"], version = "^0.96.0"}
+pymongo = "^4.3.3"
+passlib = "^1.7.4"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+bcrypt = "^4.0.1"
+psycopg2 = "^2.9.6"
+sqlalchemy = "^2.0.16"
 
 
 [tool.poetry.group.dev.dependencies]
-black = "^23.9.1"
-pytest = "^7.4.2"
-pre-commit = "^3.4.0"
-flake8 = "^6.1.0"
-datamodel-code-generator = "^0.22.0"
+pytest = "^7.3.1"
+pre-commit = "^3.3.2"
+flake8 = "^6.0.0"
+ipykernel = "^6.23.1"
+black = "^23.3.0"
 
 [build-system]
 requires = ["poetry-core"]
